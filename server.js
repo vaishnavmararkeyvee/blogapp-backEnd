@@ -22,7 +22,7 @@ app.use(function(req,res,next){
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
 
-mongoose.connect("mongodb+srv://vaishnav:vaishnav@cluster0.nyrni.mongodb.net/BlogDatabase?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://vaishnav:vaishnav@cluster0.nyrni.mongodb.net/StoryDatabase?retryWrites=true&w=majority");
 
 app.post('/api/add', async (req, res) => {
     try {
